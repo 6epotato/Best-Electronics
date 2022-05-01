@@ -1,11 +1,9 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import NavBar from '../Header/NavBar';
 
 const Home = () => {
     return (
         <div>
-            <NavBar></NavBar>
             <Banner></Banner>
         </div>
     );
