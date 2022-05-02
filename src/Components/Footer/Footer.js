@@ -38,7 +38,7 @@ const Footer = () => {
                                             <img src={instagram} alt="" />
                                         </div>
                                         <div className="col-4 icon">
-                                            <img style={{ width: "38px" }} src={youtube} alt="" />
+                                            <img style={{ width: "32px" }} src={youtube} alt="" />
                                         </div>
                                     </div>
                                 </div>

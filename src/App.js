@@ -3,15 +3,18 @@ import './App.css';
 import Home from './Components/Home/Home';
 import NavBar from './Components/Header/NavBar'
 import Footer from './Components/Footer/Footer';
+import NotFound from './Components/NotFound/NotFound';
 
 function App() {
   return (
     <div className="App">
       <NavBar></NavBar>
-     <Routes>
-       <Route path='/' element={<Home></Home>}></Route>
-     </Routes>
-     <Footer></Footer>
+      <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='home' element={<Home></Home>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
+      </Routes>
+      <Footer></Footer>
     </div>
   );
 }
