@@ -1,7 +1,7 @@
 import React from 'react';
 import facebook from '../Images/Icons/facebook.png'
 import instagram from '../Images/Icons/instagram.png'
-import youtube from '../Images/Icons/youtube.png'
+
 import './Footer.css'
 
 const Footer = () => {
@@ -30,16 +30,14 @@ const Footer = () => {
 
                                 <div className="col-6 col-lg-3">
                                     <h2>Follow Us</h2>
-                                    <div className="row">
-                                        <div className="col-4  icon">
+                                    <div className="row mt-2">
+                                        <div className="col-6  icon">
                                             <img src={facebook} alt="" />
                                         </div>
-                                        <div className="col-4 icon">
+                                        <div className="col-6 icon">
                                             <img src={instagram} alt="" />
                                         </div>
-                                        <div className="col-4 icon">
-                                            <img style={{ width: "32px" }} src={youtube} alt="" />
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
