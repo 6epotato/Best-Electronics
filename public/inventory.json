@@ -1,0 +1,92 @@
+[
+    {
+        "_id": 1,
+        "name": "Iphone",
+        "price": "150000",
+        "quantity": "10",
+        "supplier": "Apple International",
+        "description": "Bionic chipset with 13 megapixl tripple camrea set",
+        "img": "https://ibb.co/HGfznmN"
+    },
+    {
+        "_id": 2,
+        "name": "Apple Watch",
+        "price": "80000",
+        "quantity": "10",
+        "supplier": "Apple International",
+        "description": "Realtime heartrate tracker and fitnes tracker",
+        "img": "https://ibb.co/z5j8hL8"
+    },
+    {
+        "_id": 3,
+        "name": "Samsung",
+        "price": "10000",
+        "quantity": "5",
+        "supplier": "Samsung International",
+        "description": "Tripple camera with ai segment and 128gb memory and 8 gb ram",
+        "img": "https://ibb.co/rkSwgvW"
+    },
+    {
+        "_id": 4,
+        "name": "Apple Studio",
+        "price": "12000",
+        "quantity": "3",
+        "supplier": "Apple International",
+        "description": "This studio mac is 30% better than gtx 3060 and prerable for every person",
+        "img": "https://ibb.co/DCzhbnK"
+    },
+    {
+        "_id": 5,
+        "name": "Dell Laptop",
+        "price": "30000",
+        "quantity": "4",
+        "supplier": "Dell International",
+        "description": "This laptop has 16 gb ram and core i5 10th generation processor",
+        "img": "https://ibb.co/zbN145Y"
+    },
+    {
+        "_id": 6,
+        "name": "Asus Laptops",
+        "price": "20000",
+        "quantity": "4",
+        "supplier": "Asus International",
+        "description": "In this laptop there is 8gb ram with 16 gb extenton and AMD 6000 processor",
+        "img": "https://ibb.co/SKzGXrh"
+    },
+    {
+        "_id": 7,
+        "name": "Desktop PC",
+        "price": "20000",
+        "quantity": "9",
+        "supplier": "Pc World International",
+        "description": "In this omputer there is 8gb ram with with coreI9 5gen processor",
+        "img": "https://ibb.co/wc77qYB"
+    },
+    {
+        "_id": 8,
+        "name": "JBL Headphone",
+        "price": "20000",
+        "quantity": "10",
+        "supplier": "JBL International",
+        "description": "surrounded sound system with rich music feel",
+        "img": "https://ibb.co/nR6S4gX"
+    },
+    {
+        "_id": 9,
+        "name": "Samsung Smart Watch",
+        "price": "20000",
+        "quantity": "17",
+        "supplier": "Samsung International",
+        "description": "Real time heartrate tracking system with call recieving feature",
+        "img": "https://ibb.co/smJGM1Y"
+    },
+    {
+        "_id": 10,
+        "name": "Sony Headphone",
+        "price": "2000",
+        "quantity": "11",
+        "supplier": "Sony International",
+        "description": "dolby atmos with noice cancelation feature",
+        "img": "https://ibb.co/zfHVWRg"
+    }
+]
