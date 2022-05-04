@@ -6,7 +6,7 @@
         "quantity": "10",
         "supplier": "Apple International",
         "description": "Bionic chipset with 13 megapixl tripple camrea set",
-        "img": "https://ibb.co/HGfznmN"
+        "img": "https://i.ibb.co/wpFWMDJ/iphone-1.jpg"
     },
     {
         "_id": 2,
@@ -15,7 +15,7 @@
         "quantity": "10",
         "supplier": "Apple International",
         "description": "Realtime heartrate tracker and fitnes tracker",
-        "img": "https://ibb.co/z5j8hL8"
+        "img": "https://i.ibb.co/RSZhpMh/applewatch-1.jpg"
     },
     {
         "_id": 3,
@@ -24,7 +24,7 @@
         "quantity": "5",
         "supplier": "Samsung International",
         "description": "Tripple camera with ai segment and 128gb memory and 8 gb ram",
-        "img": "https://ibb.co/rkSwgvW"
+        "img": "https://i.ibb.co/8Mp7JXh/samsung-1.jpg"
     },
     {
         "_id": 4,
@@ -33,7 +33,7 @@
         "quantity": "3",
         "supplier": "Apple International",
         "description": "This studio mac is 30% better than gtx 3060 and prerable for every person",
-        "img": "https://ibb.co/DCzhbnK"
+        "img": "https://i.ibb.co/tsQgh5C/applestudio-1.jpg"
     },
     {
         "_id": 5,
@@ -42,7 +42,7 @@
         "quantity": "4",
         "supplier": "Dell International",
         "description": "This laptop has 16 gb ram and core i5 10th generation processor",
-        "img": "https://ibb.co/zbN145Y"
+        "img": "https://i.ibb.co/DkLNRby/dellaptop-1.jpg"
     },
     {
         "_id": 6,
@@ -51,7 +51,7 @@
         "quantity": "4",
         "supplier": "Asus International",
         "description": "In this laptop there is 8gb ram with 16 gb extenton and AMD 6000 processor",
-        "img": "https://ibb.co/SKzGXrh"
+        "img": "https://i.ibb.co/XzqMZ8h/asuslaptops-1.jpg"
     },
     {
         "_id": 7,
@@ -60,7 +60,7 @@
         "quantity": "9",
         "supplier": "Pc World International",
         "description": "In this omputer there is 8gb ram with with coreI9 5gen processor",
-        "img": "https://ibb.co/wc77qYB"
+        "img": "https://i.ibb.co/xFYYb3X/desktop-1.jpg"
     },
     {
         "_id": 8,
@@ -69,7 +69,7 @@
         "quantity": "10",
         "supplier": "JBL International",
         "description": "surrounded sound system with rich music feel",
-        "img": "https://ibb.co/nR6S4gX"
+        "img": "https://i.ibb.co/b7QnYW4/jblheadphone-1.jpg"
     },
     {
         "_id": 9,
@@ -78,7 +78,7 @@
         "quantity": "17",
         "supplier": "Samsung International",
         "description": "Real time heartrate tracking system with call recieving feature",
-        "img": "https://ibb.co/smJGM1Y"
+        "img": "https://i.ibb.co/kH6fWDC/smartwatch-1.jpg"
     },
     {
         "_id": 10,
@@ -87,6 +87,6 @@
         "quantity": "11",
         "supplier": "Sony International",
         "description": "dolby atmos with noice cancelation feature",
-        "img": "https://ibb.co/zfHVWRg"
+        "img": "https://i.ibb.co/ZT1zR8r/headphones-1.jpg"
     }
 ]
