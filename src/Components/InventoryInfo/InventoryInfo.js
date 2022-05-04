@@ -7,13 +7,13 @@ const InventoryInfo = () => {
         <div>
             <Container >
                 <Row className='justify-content-md-center'>
-                    {/* <Card className='my-5' style={{ width: '18rem' }}>
+                    <Card className='my-5' style={{ width: '18rem' }}>
                         <ListGroup variant="flush">
                             <ListGroupItem>Low Stock Items: 30</ListGroupItem>
                             <ListGroupItem>All Group Items: 40</ListGroupItem>
                             <ListGroupItem>All Items: 100</ListGroupItem>
                         </ListGroup>
-                    </Card> */}
+                    </Card>
                     <Chart></Chart>
 
                 </Row>
