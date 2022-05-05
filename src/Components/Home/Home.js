@@ -5,10 +5,16 @@ import useItem from '../Hooks/useItem'
 import Item from '../Inventory/Item/Item';
 import '../Inventory/Items/Items'
 import HomePageInventory from '../Inventory/HomePageInventory/HomePageInventory';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const [items, setItems] = useItem();
     const slicedItems = items.slice(0, 6);
+    //navigate to manage inventory
+    const navigate = useNavigate();
+    const navigateToManageInventory = () => {
+        navigate('/item')
+    }
 
     return (
         <div>
@@ -26,6 +32,9 @@ const Home = () => {
                         )}
 
                 </div>
+            </div>
+            <div className=' container d-flex justify-content-end'>
+                <button onClick={() => navigateToManageInventory()} type="button" className="btn btn-primary">Manage Inventory</button>
             </div>
 
 

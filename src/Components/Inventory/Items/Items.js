@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useItem from '../../Hooks/useItem';
-import Item from '../../Inventory/Item/Item';
+import deleteButton from '../../Images/Icons/delete.png'
 import './Items.css'
 
 const Items = () => {
@@ -32,14 +32,47 @@ const Items = () => {
         <div>
 
 
-            <div className='w-50 mx-auto'>
+            <div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            items.map(item => {
+                                return (<tr>
+                                    {/* <th scope="row">1</th> */}
+                                    <td>{item.name}</td>
+                                    <td>{item.price}</td>
+                                    <td>{item.quantity}</td>
+                                    <td>{item.description}</td>
+                                    <td><button type="button" className="btn btn-danger" onClick={() => handleDelete(item._id)}>
+                                        <img src={deleteButton} alt="" />
+                                    </button></td>
+                                </tr>
+                                );
+                            })
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+            {/* <div className='w-50 mx-auto'>
                 {
                     items.map(item => <div key={item._id}>
                         <h4>{item.name}<button onClick={() => handleDelete(item._id)}>X</button></h4>
 
                     </div>)
                 }
-            </div>
+            </div> */}
 
 
 
