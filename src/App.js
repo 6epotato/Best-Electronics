@@ -9,6 +9,9 @@ import Login from './Components/Authentication/Login/Login';
 import Fullpage from './Components/Authentication/Fullpage/Fullpage';
 import Register from './Components/Authentication/Register/Register';
 import FullpageRegister from './Components/Authentication/Fullpage/FullpageRegister';
+import ItemDetail from './Components/Inventory/ItemDetail/ItemDetail';
+import Items from './Components/Inventory/Items/Items';
+import AddItem from './Components/Inventory/AddItem/AddItem';
 
 function App() {
   return (
@@ -16,7 +19,10 @@ function App() {
       <NavBar></NavBar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='home' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/item' element={<Items></Items>}></Route>
+        <Route path='/item/:itemId' element={<ItemDetail></ItemDetail>}></Route>
+        <Route path='/additem' element={<AddItem></AddItem>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Fullpage></Fullpage>}></Route>
         <Route path='/register' element={<FullpageRegister></FullpageRegister>}></Route>
