@@ -32,7 +32,7 @@ const Items = () => {
         <div>
 
 
-            <div>
+            <div className='table-responsive-sm'>
                 <table className="table table-striped">
                     <thead>
                         <tr>

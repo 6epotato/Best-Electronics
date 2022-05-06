@@ -12,6 +12,7 @@ const Fullpage = () => {
 
                     <Col xs={{ span: 12, order: 1 }} md={6}> <LoginImage></LoginImage></Col>
                 </Row>
+
             </Container>
 
         </div>

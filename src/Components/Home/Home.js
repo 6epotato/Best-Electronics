@@ -2,14 +2,13 @@ import React from 'react';
 import Banner from '../Banner/Banner';
 import InventoryInfo from '../InventoryInfo/InventoryInfo';
 import useItem from '../Hooks/useItem'
-import Item from '../Inventory/Item/Item';
 import '../Inventory/Items/Items'
 import HomePageInventory from '../Inventory/HomePageInventory/HomePageInventory';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const [items, setItems] = useItem();
-    const slicedItems = items.slice(0, 20);
+    const slicedItems = items.slice(0, 6);
     //navigate to manage inventory
     const navigate = useNavigate();
     const navigateToManageInventory = () => {

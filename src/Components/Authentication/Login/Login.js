@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     // using ref for input value
@@ -38,6 +39,7 @@ const Login = () => {
                 <Button className='mt-2' type="submit">Submit</Button>
             </Form>
             <p className='my-2'>New to My website?? <Link to={'/register'} className='pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

@@ -2,22 +2,29 @@ import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import auth from '../../../firbase.init'
+import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
+
 
 
 const Register = () => {
 
-    // create user hook 
-    const [
-        createUserWithEmailAndPassword,
-        user,
-        loading,
-        error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+
+
+
     // using ref for input value
     const userRef = useRef('');
     const emailRef = useRef('');
     const passwordRef = useRef('');
+
+    // create user hook 
+
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error
+    ] = useCreateUserWithEmailAndPassword(auth);
 
     // handle the submit button
     const handleSubmit = event => {
@@ -52,6 +59,7 @@ const Register = () => {
                 <Button className='mt-2' type="submit">Submit</Button>
             </Form>
             <p className='my-2'>Already have an account? <Link to={'/login'} className='pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
