@@ -13,7 +13,7 @@ const Items = () => {
         navigate('/additem');
     }
     const handleDelete = id => {
-        const proceed = window.confirm('Are you Sure You wnat to delet?');
+        const proceed = window.confirm('Are you Sure You want to delete?');
         if (proceed) {
             const url = `http://localhost:5000/item/${id}`;
             fetch(url, {
@@ -33,7 +33,7 @@ const Items = () => {
 
 
             <div>
-                <table class="table table-striped">
+                <table className="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col">Name</th>

@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const [items, setItems] = useItem();
-    const slicedItems = items.slice(0, 6);
+    const slicedItems = items.slice(0, 20);
     //navigate to manage inventory
     const navigate = useNavigate();
     const navigateToManageInventory = () => {
