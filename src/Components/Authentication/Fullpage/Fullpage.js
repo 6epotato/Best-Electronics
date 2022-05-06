@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Login from '../Login/Login'
+import LoginUser from '../Login/LoginUser';
 import LoginImage from '../LoginImage/LoginImage';
 
 const Fullpage = () => {
@@ -8,7 +9,7 @@ const Fullpage = () => {
         <div>
             <Container>
                 <Row className="landing my-5">
-                    <Col xs={{ span: 12, order: 2 }} md={6} ><Login></Login></Col>
+                    <Col xs={{ span: 12, order: 2 }} md={6} ><LoginUser></LoginUser></Col>
 
                     <Col xs={{ span: 12, order: 1 }} md={6}> <LoginImage></LoginImage></Col>
                 </Row>
