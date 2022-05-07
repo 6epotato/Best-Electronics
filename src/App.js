@@ -33,7 +33,7 @@ function App() {
             <ItemDetail></ItemDetail>
           </RequireAuth>}></Route>
         <Route path='/additem' element={<AddItem></AddItem>}></Route>
-        <Route path='/additem' element={<MyItem></MyItem>}></Route>
+        <Route path='/myitem' element={<MyItem></MyItem>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Fullpage></Fullpage>}></Route>
         <Route path='/register' element={<FullpageRegister></FullpageRegister>}></Route>

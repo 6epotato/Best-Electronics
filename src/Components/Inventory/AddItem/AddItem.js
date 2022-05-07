@@ -1,12 +1,14 @@
 import axios from 'axios';
-import React from 'react';
+import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
 import auth from '../../../firebase.init';
+import useItem from '../../Hooks/useItem';
 
 const AddItem = () => {
     const [user] = useAuthState(auth);
+    const [items, setItems] = useItem({});
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
 
@@ -26,11 +28,12 @@ const AddItem = () => {
             })
 
         const addEmail = {
-            email: user.email
+            email: user.email,
+            data: data
 
 
         }
-        axios.post('http://localhost:5000/addemail', addEmail)
+        axios.post('http://localhost:5000/addEmail', addEmail)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {
