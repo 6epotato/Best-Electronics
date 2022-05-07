@@ -20,14 +20,21 @@ const NavBar = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/home">Home</Nav.Link>
-              <Nav.Link as={Link} to="/item">Manage Inventory</Nav.Link>
               <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
             </Nav>
             <Nav>
 
               {
+                user && <>
+                  <Nav.Link as={Link} to="/item">Manage Inventory</Nav.Link>
+                  <Nav.Link as={Link} to="/myitem">My Item</Nav.Link>
+                  <Nav.Link as={Link} to="/additem">Add Item</Nav.Link>
+                </>
+              }
+
+              {
                 user ?
-                  <button onClick={handleSignout} type="button" class="btn btn-primary">Sign Out</button> :
+                  <button onClick={handleSignout} type="button" class="btn btn-link text-decoration-none">Sign Out</button> :
                   <Nav.Link as={Link} to="/login">
                     Login
                   </Nav.Link>}

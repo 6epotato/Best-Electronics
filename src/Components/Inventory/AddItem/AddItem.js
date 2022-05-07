@@ -2,11 +2,13 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../../firebase.init';
 import useItem from '../../Hooks/useItem';
 
 const AddItem = () => {
+    const navigte = useNavigate();
     const [user] = useAuthState(auth);
     const [items, setItems] = useItem({});
     const { register, handleSubmit } = useForm();
@@ -40,7 +42,9 @@ const AddItem = () => {
                     toast('Your item has been set')
                 }
             })
+        navigte('/item')
     }
+
 
     return (
         <div className='w-50 mx-auto my-5 className="mb-3 placeholder"'>

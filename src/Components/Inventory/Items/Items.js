@@ -37,6 +37,7 @@ const Items = () => {
                     <thead>
                         <tr>
                             <th scope="col">Name</th>
+                            <th scope="col">Display Picture</th>
                             <th scope="col">Price</th>
                             <th scope="col">Quantity</th>
                             <th scope="col">Description</th>
@@ -48,6 +49,7 @@ const Items = () => {
                                 return (<tr>
                                     {/* <th scope="row">1</th> */}
                                     <td>{item.name}</td>
+                                    <td><img style={{ width: "30px" }} src={item.img} alt="" /></td>
                                     <td>{item.price}</td>
                                     <td>{item.quantity}</td>
                                     <td>{item.description}</td>
