@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 
 const ItemDetail = () => {
@@ -68,6 +68,12 @@ const ItemDetail = () => {
             })
     }
 
+    //navigate to manage inventory
+    const navigate = useNavigate();
+    const navigateToManageInventory = () => {
+        navigate('/item')
+    }
+
     return (
         <>
 
@@ -98,6 +104,9 @@ const ItemDetail = () => {
 
                 </form>
 
+            </div>
+            <div className=' container d-flex justify-content-end my-5 w-50'>
+                <button onClick={() => navigateToManageInventory()} type="button" className="btn btn-primary">Manage All Inventory</button>
             </div>
         </>
     );

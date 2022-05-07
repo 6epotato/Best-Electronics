@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -20,7 +20,9 @@ const LoginUser = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+    const location = useLocation();
 
+    let from = location.state?.from?.pathname || "/";
     const handleLogin = () => {
         signInWithEmailAndPassword(email, password)
 
@@ -48,7 +50,8 @@ const LoginUser = () => {
         return <Loading></Loading>;
     }
     if (user) {
-        navigate('/home');
+        navigate(from, { replace: true });
+
     }
     return (
         <div>
@@ -78,7 +81,7 @@ const LoginUser = () => {
                 <p>I Forgot my password <button className='btn btn-link pe-auto text-decoration-none' onClick={resetPassword}>Reset Passworde</button></p>
             </div>
             <SocialLogin></SocialLogin>
-            <ToastContainer></ToastContainer>
+
         </div>
 
 

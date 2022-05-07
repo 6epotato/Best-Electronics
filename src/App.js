@@ -13,6 +13,8 @@ import ItemDetail from './Components/Inventory/ItemDetail/ItemDetail';
 import Items from './Components/Inventory/Items/Items';
 import AddItem from './Components/Inventory/AddItem/AddItem';
 import RequireAuth from './Components/Authentication/Login/RequireAuth';
+import MyItem from './Components/Inventory/MyItem/MyItem';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -21,18 +23,24 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/item' element={<Items></Items>}></Route>
+        <Route path='/item' element={
+          <RequireAuth>
+            <Items></Items>
+          </RequireAuth>
+        }></Route>
         <Route path='/item/:itemId' element={
           <RequireAuth>
             <ItemDetail></ItemDetail>
           </RequireAuth>}></Route>
         <Route path='/additem' element={<AddItem></AddItem>}></Route>
+        <Route path='/additem' element={<MyItem></MyItem>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Fullpage></Fullpage>}></Route>
         <Route path='/register' element={<FullpageRegister></FullpageRegister>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
