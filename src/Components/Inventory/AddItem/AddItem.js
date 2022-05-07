@@ -56,7 +56,7 @@ const AddItem = () => {
                 <input className="mb-3" placeholder='Enter price' type="number" {...register("price")} />
                 <input className="mb-3" placeholder='Enter quantity' type="number" {...register("quantity")} />
                 <input className="mb-3" placeholder='Photo URL' type="text" {...register("img")} />
-                <input type="submit" value='Add Service' />
+                <input className=' btn-outline-info' type="submit" value='Add Service' />
             </form>
         </div>
     );

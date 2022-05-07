@@ -89,7 +89,7 @@ const Items = () => {
 
             </div> */}
 
-            <button onClick={() => navigateToAddItem()} type="button" className="btn btn-primary d-grid col-6 my-5 mx-auto">Add Item</button>
+            <button onClick={() => navigateToAddItem()} type="button" className="btn  btn-outline-info d-grid col-6 my-5 mx-auto">Add Item</button>
 
         </div>
     );

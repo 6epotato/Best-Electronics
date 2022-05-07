@@ -1,7 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import LoginImage from '../LoginImage/LoginImage';
-import Register from '../Register/Register';
 import SignIn from '../Register/SignIn';
 
 const FullpageRegister = () => {

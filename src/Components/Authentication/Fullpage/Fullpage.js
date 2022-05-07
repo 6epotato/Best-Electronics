@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import Login from '../Login/Login'
 import LoginUser from '../Login/LoginUser';
 import LoginImage from '../LoginImage/LoginImage';
 

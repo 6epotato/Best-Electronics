@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import facebook from '../Images/Icons/facebook.png'
 import instagram from '../Images/Icons/instagram.png'
 
@@ -24,7 +25,7 @@ const Footer = () => {
                                 </div>
                                 <div className="col-6 col-lg-3">
                                     <h3>Get To Know Us</h3>
-
+                                    <h5> <Link to={'/blogs'} className='pe-auto text-decoration-none text-white'>Read BLogs</Link></h5>
 
                                 </div>
 

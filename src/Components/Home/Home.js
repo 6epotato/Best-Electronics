@@ -33,7 +33,7 @@ const Home = () => {
                 </div>
             </div>
             <div className=' container d-flex justify-content-end'>
-                <button onClick={() => navigateToManageInventory()} type="button" className="btn btn-primary">Manage Inventory</button>
+                <button onClick={() => navigateToManageInventory()} type="button" className="btn  btn-outline-info">Manage Inventory</button>
             </div>
 
 

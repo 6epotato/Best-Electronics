@@ -83,10 +83,10 @@ const ItemDetail = () => {
                     <img src={item.img} className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">{item.name}</h5>
-                        <h6 className="card-title">{item.price}</h6>
-                        <h6 className="card-title">{item.quantity}</h6>
-                        <p className="card-text">{item.supplier}</p>
-                        <p className="card-text">{item.description}</p>
+                        <h6 className="card-title"><b>Price: </b>${item.price}</h6>
+                        <h6 className="card-title"><b>Quantity: </b>{item.quantity}</h6>
+                        <p className="card-text"><b>Supplier Name: </b>{item.supplier}</p>
+                        <p className="card-text"> <b>About: </b>{item.description}</p>
                         <button onClick={() => handleDeliverd()} type="button" className="btn btn-primary">Deliverd</button>
                     </div>
                 </div>

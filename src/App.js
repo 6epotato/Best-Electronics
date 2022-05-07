@@ -5,9 +5,7 @@ import NavBar from './Components/Header/NavBar'
 import Footer from './Components/Footer/Footer';
 import NotFound from './Components/NotFound/NotFound';
 import Blogs from './Components/Blogs/Blogs';
-import Login from './Components/Authentication/Login/Login';
 import Fullpage from './Components/Authentication/Fullpage/Fullpage';
-import Register from './Components/Authentication/Register/Register';
 import FullpageRegister from './Components/Authentication/Fullpage/FullpageRegister';
 import ItemDetail from './Components/Inventory/ItemDetail/ItemDetail';
 import Items from './Components/Inventory/Items/Items';

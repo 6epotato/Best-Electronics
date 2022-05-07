@@ -13,11 +13,11 @@ const HomePageInventory = ({ item }) => {
                 <img className="card-img-top" src={img} />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
-                    <h6 className="card-title">{price}</h6>
-                    <p className="card-text">{quantity}</p>
-                    <p className="card-text">{supplier}</p>
-                    <p className="card-text">{description}</p>
-                    <button onClick={() => nevigateToServiceDetail(_id)} type="button" className="btn btn-primary">Update</button>
+                    <h6 className="card-title"><b>Price:</b> ${price}</h6>
+                    <p className="card-text"><b>Quantity:</b> {quantity}</p>
+                    <p className="card-text"><b>Supplier Name:</b> {supplier}</p>
+                    <p className="card-text"><b>About:</b> {description}</p>
+                    <button onClick={() => nevigateToServiceDetail(_id)} type="button" className="btn  btn-outline-info">Update</button>
                 </div>
             </div>
         </div>
