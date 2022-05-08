@@ -15,7 +15,7 @@ const AddItem = () => {
     const onSubmit = data => {
 
         console.log(data);
-        const url = `http://localhost:5000/item`;
+        const url = `https://ancient-garden-83535.herokuapp.com/item`;
         fetch(url, {
             method: "POST",
             headers: {
@@ -35,11 +35,11 @@ const AddItem = () => {
 
 
         }
-        axios.post('http://localhost:5000/addEmail', addEmail)
+        axios.post('https://ancient-garden-83535.herokuapp.com/addEmail', addEmail)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {
-                    toast('Your item has been set')
+                    toast('Your item has been add')
                 }
             })
         navigte('/item')

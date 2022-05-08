@@ -32,15 +32,17 @@ const LoginUser = () => {
     const resetPassword = async () => {
         if (email) {
             await sendPasswordResetEmail(email);
-            toast('Sent email');
+            toast('Email has been sent');
         }
         else {
             toast('Please Enter Your Email Address')
         }
     }
+    let errorMassage;
 
     if (error) {
         return (
+            errorMassage =
             <div>
                 <p className='text-danger'>Error: {error.message}</p>
             </div>
@@ -71,14 +73,15 @@ const LoginUser = () => {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
-                    <button className='btn-primary' onClick={() => handleLogin()}>
+                    {errorMassage}
+                    <button className=' btn-outline-info' onClick={() => handleLogin()}>
                         Sign In
                     </button>
                 </div>
             </div>
             <div>
-                <p>Already have an account? <Link to={'/register'} className='pe-auto text-decoration-none'>Please Register</Link></p>
-                <p>I Forgot my password <button className='btn btn-link pe-auto text-decoration-none' onClick={resetPassword}>Reset Passworde</button></p>
+                <p>Already have an account? <Link to={'/register'} className='pe-auto text-decoration-none text-info'>Please Register</Link></p>
+                <p>I Forgot my password <button className='btn btn-link pe-auto text-decoration-none text-info' onClick={resetPassword}>Reset Passworde</button></p>
             </div>
             <SocialLogin></SocialLogin>
 

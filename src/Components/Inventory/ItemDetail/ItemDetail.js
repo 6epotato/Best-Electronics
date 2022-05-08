@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import cart from "../../Images/Icons/shopping-cart.png"
+import stock from "../../Images/Icons/inventory.png"
+import restock from "../../Images/Icons/restock.png"
 
 
 const ItemDetail = () => {
@@ -7,7 +10,7 @@ const ItemDetail = () => {
     const [item, setItem] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/item/${itemId}`;
+        const url = `https://ancient-garden-83535.herokuapp.com/item/${itemId}`;
 
 
         fetch(url)
@@ -24,7 +27,7 @@ const ItemDetail = () => {
 
         //send data to  server
 
-        const url = `http://localhost:5000/item/${itemId}`;
+        const url = `https://ancient-garden-83535.herokuapp.com/item/${itemId}`;
         fetch(url, {
             method: "PUT",
             headers: {
@@ -52,7 +55,7 @@ const ItemDetail = () => {
 
         //send data to  server
 
-        const url = `http://localhost:5000/item/${itemId}`;
+        const url = `https://ancient-garden-83535.herokuapp.com/item/${itemId}`;
         fetch(url, {
             method: "PUT",
             headers: {
@@ -87,7 +90,9 @@ const ItemDetail = () => {
                         <h6 className="card-title"><b>Quantity: </b>{item.quantity}</h6>
                         <p className="card-text"><b>Supplier Name: </b>{item.supplier}</p>
                         <p className="card-text"> <b>About: </b>{item.description}</p>
-                        <button onClick={() => handleDeliverd()} type="button" className="btn btn-primary">Deliverd</button>
+                        <button onClick={() => handleDeliverd()} type="button" className="btn  btn-info">
+                            <img className='pe-2' src={cart} alt="" />
+                            Deliverd</button>
                     </div>
                 </div>
                 {/* restoke form */}
@@ -100,13 +105,17 @@ const ItemDetail = () => {
                         <input type="number" name='restoke' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
 
                     </div>
-                    <button type="submit" class="btn btn-primary">Restoke</button>
+                    <button type="submit" class="btn  btn-outline-info">
+                        <img className='pe-2' src={restock} alt="" />
+                        Restoke</button>
 
                 </form>
 
             </div>
             <div className=' container d-flex justify-content-end my-5 w-50'>
-                <button onClick={() => navigateToManageInventory()} type="button" className="btn btn-primary">Manage All Inventory</button>
+                <button onClick={() => navigateToManageInventory()} type="button" className="btn btn-outline-info">
+                    <img className='pe-2' src={stock} alt="" />
+                    Manage All Inventory</button>
             </div>
         </>
     );

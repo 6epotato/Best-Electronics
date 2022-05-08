@@ -5,6 +5,7 @@ import useItem from '../Hooks/useItem'
 import '../Inventory/Items/Items'
 import HomePageInventory from '../Inventory/HomePageInventory/HomePageInventory';
 import { useNavigate } from 'react-router-dom';
+import stock from '../Images/Icons/inventory.png'
 
 const Home = () => {
     const [items, setItems] = useItem();
@@ -33,7 +34,9 @@ const Home = () => {
                 </div>
             </div>
             <div className=' container d-flex justify-content-end'>
-                <button onClick={() => navigateToManageInventory()} type="button" className="btn  btn-outline-info">Manage Inventory</button>
+                <button onClick={() => navigateToManageInventory()} type="button" className="btn  btn-outline-info">
+                    <img className='pe-2' src={stock} alt="" />
+                    Manage Inventory</button>
             </div>
 
 

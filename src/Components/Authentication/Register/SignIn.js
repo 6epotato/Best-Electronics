@@ -57,12 +57,12 @@ const SignIn = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                <button className='btn-primary' onClick={() => handleRegister()}>
+                <button className=' btn-outline-info' onClick={() => handleRegister()}>
                     Register
                 </button>
             </div>
             <div>
-                <p>Already have an account? <Link to={'/login'} className='pe-auto text-decoration-none'>Please Login</Link></p>
+                <p>Already have an account? <Link to={'/login'} className='pe-auto mt-3 text-decoration-none text-info'>Please Login</Link></p>
             </div>
             <SocialLogin></SocialLogin>
         </div>
