@@ -15,7 +15,7 @@ const Items = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you Sure You want to delete?');
         if (proceed) {
-            const url = `https://ancient-garden-83535.herokuapp.com/item/${id}`;
+            const url = `https://best-electronics-server.onrender.com/item/${id}`;
             fetch(url, {
                 method: "DELETE"
             })

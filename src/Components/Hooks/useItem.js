@@ -5,7 +5,7 @@ const useItem = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('https://ancient-garden-83535.herokuapp.com/item')
+        fetch('https://best-electronics-server.onrender.com/item')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])

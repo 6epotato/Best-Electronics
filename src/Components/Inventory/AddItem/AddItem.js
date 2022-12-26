@@ -15,7 +15,7 @@ const AddItem = () => {
     const onSubmit = data => {
 
         console.log(data);
-        const url = `https://ancient-garden-83535.herokuapp.com/item`;
+        const url = `https://best-electronics-server.onrender.com/item`;
         fetch(url, {
             method: "POST",
             headers: {
@@ -35,7 +35,7 @@ const AddItem = () => {
 
 
         }
-        axios.post('https://ancient-garden-83535.herokuapp.com/addEmail', addEmail)
+        axios.post('https://best-electronics-server.onrender.com/addEmail', addEmail)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {

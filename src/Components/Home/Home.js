@@ -6,6 +6,8 @@ import '../Inventory/Items/Items'
 import HomePageInventory from '../Inventory/HomePageInventory/HomePageInventory';
 import { useNavigate } from 'react-router-dom';
 import stock from '../Images/Icons/inventory.png'
+import 'bootstrap/dist/js/bootstrap.bundle';
+
 
 const Home = () => {
     const [items, setItems] = useItem();

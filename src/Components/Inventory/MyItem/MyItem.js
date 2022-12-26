@@ -14,7 +14,7 @@ const MyItem = () => {
     useEffect(() => {
         const getEmail = async () => {
             const email = user.email;
-            const url = `https://ancient-garden-83535.herokuapp.com/addEmail?email=${email}`;
+            const url = `https://best-electronics-server.onrender.com/addEmail?email=${email}`;
             const { data } = await axios.get(url);
             setItem(data);
         }
@@ -30,7 +30,7 @@ const MyItem = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you Sure You want to delete?');
         if (proceed) {
-            const url = `https://ancient-garden-83535.herokuapp.com/addEmail/${id}`;
+            const url = `https://best-electronics-server.onrender.com/addEmail/${id}`;
             fetch(url, {
                 method: "DELETE"
             })

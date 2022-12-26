@@ -10,7 +10,7 @@ const ItemDetail = () => {
     const [item, setItem] = useState({});
 
     useEffect(() => {
-        const url = `https://ancient-garden-83535.herokuapp.com/item/${itemId}`;
+        const url = `https://best-electronics-server.onrender.com/item/${itemId}`;
 
 
         fetch(url)
@@ -27,7 +27,7 @@ const ItemDetail = () => {
 
         //send data to  server
 
-        const url = `https://ancient-garden-83535.herokuapp.com/item/${itemId}`;
+        const url = `https://best-electronics-server.onrender.com/item/${itemId}`;
         fetch(url, {
             method: "PUT",
             headers: {
@@ -55,7 +55,7 @@ const ItemDetail = () => {
 
         //send data to  server
 
-        const url = `https://ancient-garden-83535.herokuapp.com/item/${itemId}`;
+        const url = `https://best-electronics-server.onrender.com/item/${itemId}`;
         fetch(url, {
             method: "PUT",
             headers: {
