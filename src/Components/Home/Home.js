@@ -7,6 +7,7 @@ import HomePageInventory from '../Inventory/HomePageInventory/HomePageInventory'
 import { useNavigate } from 'react-router-dom';
 import stock from '../Images/Icons/inventory.png'
 import 'bootstrap/dist/js/bootstrap.bundle';
+import Loading from '../Loading/Loading';
 
 
 const Home = () => {
@@ -22,11 +23,12 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <h1 className='my-5 text-center'>Inventory</h1>
-            <div className="items my-5">
+            <div className="items my-5 d-flex justify-content-center">
                 <div className="items-container">
                     {
 
-                        slicedItems.map(item => <HomePageInventory
+                     slicedItems.length===0 ? <Loading></Loading> :
+                       slicedItems.map(item => <HomePageInventory
                             key={items._id}
                             item={item}
                         >
