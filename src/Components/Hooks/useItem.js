@@ -5,7 +5,7 @@ const useItem = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('https://best-electronics-server.onrender.com/item')
+        fetch('https://best-electronics-server.onrender.com/item') 
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])
